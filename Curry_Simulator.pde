@@ -3,6 +3,7 @@ PImage img1;
 PImage img2;
 PImage img3;
 PImage img4;
+PImage img5;
 
 void setup()
 {
@@ -14,6 +15,7 @@ void setup()
   img2 = loadImage("TurmericPowder.png");
   img3 = loadImage("CorianderPowder.png");
   img4 = loadImage("Bowl.png");
+  img5 = loadImage("woodplate.png");
 }
 
 void draw()
@@ -22,4 +24,5 @@ void draw()
   image(img2, 20, 515);
   image(img3, 40, 620);
   image(img4, 526, 245);
+  image(img5, 600,350);
 }

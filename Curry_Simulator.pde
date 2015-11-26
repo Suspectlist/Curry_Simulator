@@ -21,5 +21,5 @@ void draw()
   image(img1, 45, 340);
   image(img2, 20, 515);
   image(img3, 40, 620);
-  image(img4, 150, 150);
+  image(img4, 526, 245);
 }

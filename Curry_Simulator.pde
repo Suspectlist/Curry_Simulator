@@ -9,7 +9,7 @@ void setup()
 {
   fullScreen();
   imgKitchen = loadImage("Kitchen.png"); 
-  img.resize(width,height);
+  imgKitchen.resize(width,height);
   background(imgKitchen);  
   imgChilli = loadImage("ChilliPowder.png");
   imgTurm = loadImage("TurmericPowder.png");

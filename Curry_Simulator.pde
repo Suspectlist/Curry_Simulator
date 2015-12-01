@@ -32,4 +32,8 @@ void draw()
 void Controls()
 {
   //chilli
-  if (
+  if (imgChilli < imgBowl)
+    {
+      img
+    }
+  if (imgTurm

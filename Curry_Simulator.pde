@@ -71,6 +71,8 @@ void draw()
     "UP increase threshold, DOWN decrease threshold", 10, 500);
   float scaledX = map(v2.x, 0, k.width,  0, width);
   float scaledY = map(v2.y, 0, k.height, 0, height);
+  
+  Controls;
 }
 
 void keyPressed() 
@@ -99,3 +101,14 @@ void clearImage()
       //paintImg.set(x, y, color(0) );
  }
 }
+
+void Controls()
+{
+  //chilli
+  if (imgChilli < imgBowl)
+    {
+      img
+    }
+  if (imgTurm
+  
+  

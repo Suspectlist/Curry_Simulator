@@ -3,6 +3,11 @@ import org.openkinect.freenect2.*;
 import org.openkinect.processing.*;
 import org.openkinect.tests.*;
 
+import org.openkinect.freenect.*;
+import org.openkinect.freenect2.*;
+import org.openkinect.processing.*;
+import org.openkinect.tests.*;
+
 Kinect k;
 KinectTracker tracker;
 float widthScale;
@@ -40,7 +45,7 @@ void draw()
   image(imgTurm, 20, 515);
   image(imgCorian, 40, 620);
   image(imgBowl, 526, 245);
-  image(imgPLate, 600,350);
+  image(imgPlate, 600,350);
   
   tracker.display();
   tracker.track();
@@ -60,7 +65,6 @@ void draw()
     "UP increase threshold, DOWN decrease threshold", 10, 500);
   float scaledX = map(v2.x, 0, k.width,  0, width);
   float scaledY = map(v2.y, 0, k.height, 0, height);
-  Controls();
 }
 
 void keyPressed() 
@@ -98,3 +102,5 @@ void Controls()
       img
     }
   if (imgTurm
+  
+    Controls();

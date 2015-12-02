@@ -19,6 +19,8 @@ PImage imgTurm;
 PImage imgCorian;
 PImage imgBowl;
 PImage imgPlate;
+PImage imgOnion;
+PImage imgGarlic;
 
 void setup()
 {
@@ -31,6 +33,8 @@ void setup()
   imgCorian = loadImage("CorianderPowder.png");
   imgBowl = loadImage("Bowl.png");
   imgPlate = loadImage("woodplate.png");
+  imgOnion = loadImage("onion.png");
+  imgGarlic = loadImage("garlic.png");
   
   k = new Kinect(this);
   tracker = new KinectTracker();
@@ -41,12 +45,14 @@ void setup()
 
 void draw()
 {
+  image(imgBowl, 526, 245);
+  image(imgPlate, -200, 250);
   image(imgChilli, 45, 340);
   image(imgTurm, 20, 515);
-  image(imgCorian, 40, 620);
-  image(imgBowl, 526, 245);
-  image(imgPlate, 600,350);
-  
+  image(imgCorian, 80, 620);
+  image(imgOnion, 250, 350);
+  image(imgGarlic, 250, 600);
+ 
   tracker.display();
   tracker.track();
   
@@ -93,14 +99,3 @@ void clearImage()
       //paintImg.set(x, y, color(0) );
  }
 }
-
-void Controls()
-{
-  //chilli
-  if (imgChilli < imgBowl)
-    {
-      img
-    }
-  if (imgTurm
-  
-    Controls();

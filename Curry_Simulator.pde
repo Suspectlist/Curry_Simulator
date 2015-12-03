@@ -47,6 +47,7 @@ void setup()
 
 void draw()
 {
+  rect(250,500,300,200)
   image(imgBowl, 526, 245);
   image(imgPlate, -200, 250);
   image(imgChilli, 45, 340);
@@ -55,6 +56,7 @@ void draw()
   image(imgOnion, 250, 350);
   image(imgGarlic, 250, 600);
   image(imgWater, 500, 600);
+  
  
   tracker.track();
   
@@ -103,8 +105,6 @@ void clearImage()
  }
 }
 
-<<<<<<< HEAD
-=======
 void Controls()
 {
   //chilli
@@ -118,6 +118,6 @@ void Controls()
   
   //garlic
 }
->>>>>>> origin/master
+
   
   

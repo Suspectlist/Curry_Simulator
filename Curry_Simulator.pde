@@ -58,6 +58,17 @@ fill(0);
   textSize(12);
 text("second: put your hand over onion and then garlic",880,200); 
 fill(0);
+  textSize(12);
+text("third: now put it over the chilli for spice",880,220);
+fill(0);
+  textSize(12);
+text("fourth: put it over the turmeric",880,240);
+fill(0);
+  textSize(12);
+text("fifth: now over the coriander for more spice",880,260);
+fill(0);
+  textSize(12);
+  
 fill(255);
   image(imgBowl, 526, 245);
   image(imgPlate, -200, 250);

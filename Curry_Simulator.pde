@@ -47,7 +47,7 @@ void setup()
 
 void draw()
 {
-  rect(250,500,300,200)
+  rect(250,500,600,200);
   image(imgBowl, 526, 245);
   image(imgPlate, -200, 250);
   image(imgChilli, 45, 340);

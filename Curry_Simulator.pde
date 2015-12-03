@@ -103,5 +103,21 @@ void clearImage()
  }
 }
 
+<<<<<<< HEAD
+=======
+void Controls()
+{
+  //chilli
+  
+  
+  //turm
+  
+  //corian
+  
+  //onion
+  
+  //garlic
+}
+>>>>>>> origin/master
   
   

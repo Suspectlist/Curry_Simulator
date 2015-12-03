@@ -105,10 +105,15 @@ void clearImage()
 void Controls()
 {
   //chilli
-  if (imgChilli < imgBowl)
-    {
-      img
-    }
-  if (imgTurm
+  
+  
+  //turm
+  
+  //corian
+  
+  //onion
+  
+  //garlic
+}
   
   

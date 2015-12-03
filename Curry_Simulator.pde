@@ -47,15 +47,17 @@ void setup()
 
 void draw()
 {
-  rect(900,100,250,500);
+  rect(870,100,300,500);
   textSize(22);
-text("Instructions",900,80); 
-fill(255);
+fill(0);
+text("Instructions",950,150); 
+fill(0);
   textSize(12);
-text("first: put your hand over the water",900,69);
-fill(255);
+text("first: put your hand over the water",880,180);
+fill(0);
   textSize(12);
-text("second: put your hand over onion and then garlic",900,56); 
+text("second: put your hand over onion and then garlic",880,200); 
+fill(0);
 fill(255);
   image(imgBowl, 526, 245);
   image(imgPlate, -200, 250);
@@ -74,8 +76,6 @@ fill(255);
   PVector v2 = tracker.getLerpedPos();
 
   int t = tracker.getThreshold();
-  text("threshold: " + t + "    " +  "framerate: " + int(frameRate) + "    " + 
-    "UP increase threshold, DOWN decrease threshold", 10, 500);
   float scaledX = map(v2.x, 0, k.width,  0, width);
   float scaledY = map(v2.y, 0, k.height, 0, height);
   

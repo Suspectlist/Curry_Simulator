@@ -47,7 +47,7 @@ void setup()
 
 void draw()
 {
-  rect(250,500,600,200);
+  rect(900,100,250,500);
   image(imgBowl, 526, 245);
   image(imgPlate, -200, 250);
   image(imgChilli, 45, 340);
@@ -55,21 +55,15 @@ void draw()
   image(imgCorian, 80, 620);
   image(imgOnion, 250, 350);
   image(imgGarlic, 250, 600);
-  image(imgWater, 500, 600);
+  image(imgWater, 1000, 600);
   
  
   tracker.track();
   
   PVector v1 = tracker.getPos();
-  fill(50, 100, 250, 200);
-  noStroke();
-  ellipse(v1.x, v1.y, 20, 20);
   
   PVector v2 = tracker.getLerpedPos();
-  fill(100, 250, 50, 200);
-  noStroke();
-  ellipse(v2.x, v2.y, 20, 20);
-  
+
   int t = tracker.getThreshold();
   text("threshold: " + t + "    " +  "framerate: " + int(frameRate) + "    " + 
     "UP increase threshold, DOWN decrease threshold", 10, 500);

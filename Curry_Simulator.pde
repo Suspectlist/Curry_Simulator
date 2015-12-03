@@ -21,6 +21,7 @@ PImage imgBowl;
 PImage imgPlate;
 PImage imgOnion;
 PImage imgGarlic;
+PImage imgWater;
 
 void setup()
 {
@@ -35,6 +36,7 @@ void setup()
   imgPlate = loadImage("woodplate.png");
   imgOnion = loadImage("onion.png");
   imgGarlic = loadImage("garlic.png");
+  imgWater = loadImage("Water.png");
   
   k = new Kinect(this);
   tracker = new KinectTracker();
@@ -52,8 +54,8 @@ void draw()
   image(imgCorian, 80, 620);
   image(imgOnion, 250, 350);
   image(imgGarlic, 250, 600);
+  image(imgWater, 500, 600);
  
-  tracker.display();
   tracker.track();
   
   PVector v1 = tracker.getPos();
@@ -72,7 +74,6 @@ void draw()
   float scaledX = map(v2.x, 0, k.width,  0, width);
   float scaledY = map(v2.y, 0, k.height, 0, height);
   
-  Controls;
 }
 
 void keyPressed() 
@@ -102,13 +103,5 @@ void clearImage()
  }
 }
 
-void Controls()
-{
-  //chilli
-  if (imgChilli < imgBowl)
-    {
-      img
-    }
-  if (imgTurm
   
   

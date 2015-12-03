@@ -48,6 +48,15 @@ void setup()
 void draw()
 {
   rect(900,100,250,500);
+  textSize(22);
+text("Instructions",900,80); 
+fill(255);
+  textSize(12);
+text("first: put your hand over the water",900,69);
+fill(255);
+  textSize(12);
+text("second: put your hand over onion and then garlic",900,56); 
+fill(255);
   image(imgBowl, 526, 245);
   image(imgPlate, -200, 250);
   image(imgChilli, 45, 340);

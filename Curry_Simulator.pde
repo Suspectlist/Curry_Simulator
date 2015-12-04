@@ -119,19 +119,20 @@ void clearImage()
  }
 }
 
-void Controls()
+void Collisions()
 {
-  //chilli
+  //water
+  if (x2 > x);
+  if x2 < x+width);
+  {
+    then
+  //onion
   
+  //garlic
+  
+  //chilli
   
   //turm
   
   //corian
-  
-  //onion
-  
-  //garlic
 }
-
-  
-  

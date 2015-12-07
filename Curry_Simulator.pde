@@ -30,7 +30,7 @@ PImage imgWater;
 PImage imgHand;
 
 Ingredient corian;
-ingredient chilli;
+Ingredient chilli;
 Ingredient water;
 Ingredient garlic;
 Ingredient onion;
@@ -51,7 +51,7 @@ void setup()
   imgGarlic = loadImage("garlic.png");
   imgWater = loadImage("Water.png");
   
-  corian = new Ingredient("corian.png");;
+  corian = new Ingredient("corian.png");
   chilli = new Ingredient("chilli.png");
   
   imgHand = loadImage("hand.png");
@@ -109,7 +109,7 @@ void draw()
   float scaledX = map(v2.x, 0, k.width, 0, width);
   float scaledY = map(v2.y, 0, k.height, 0, height);
   
-  if (water.isColliding(scaledX,scaledY))
+  if (water.isColliding(scaledX,scaledY));
   {
    ellipse(640,355,175,170);
    fill(0,191,255);

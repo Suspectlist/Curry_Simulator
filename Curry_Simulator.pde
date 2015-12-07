@@ -31,6 +31,10 @@ PImage imgHand;
 
 Ingredient corian;
 ingredient chilli;
+Ingredient water;
+Ingredient garlic;
+Ingredient onion;
+Ingredient turm;
 
 void setup()
 {
@@ -111,31 +115,31 @@ void draw()
    fill(0,191,255);
   }
   
-  if ( corian.isColliding(scaledX,scaledY))
+  if (corian.isColliding(scaledX,scaledY))
   {
     ellipse(640,355,175,170);
     fill(22,115,28);
   }
   
-  if ( chilli.isColliding(scaledX,scaledY))
+  if (chilli.isColliding(scaledX,scaledY))
   {
     ellipse(640,355,175,170);
     fill(178,34,34);
   }
   
-  if ( turm.isColliding(scaledX,scaledY))
+  if (turm.isColliding(scaledX,scaledY))
   {
     ellipse(640,355,175,170);
     fill(218,165,32);
   }
   
-  if ( onion.isColliding(scaledX,scaledY))
+  if (onion.isColliding(scaledX,scaledY))
   {
     ellipse(640,355,175,170);
     fill(0,255,255);
   }
   
-  if ( garlic.isColliding(scaledX,scaledY))
+  if (garlic.isColliding(scaledX,scaledY))
   {
     ellipse(640,355,175,170);
     fill(0,255,255);

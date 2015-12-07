@@ -23,6 +23,9 @@ PImage imgOnion;
 PImage imgGarlic;
 PImage imgWater;
 
+Ingredient corian;
+ingredient chilli;
+
 void setup()
 {
   fullScreen();
@@ -37,6 +40,9 @@ void setup()
   imgOnion = loadImage("onion.png");
   imgGarlic = loadImage("garlic.png");
   imgWater = loadImage("Water.png");
+  
+  corian = new Ingredient("corian.png");;
+  chilli = new Ingredient("chilli.png");
   
   k = new Kinect(this);
   tracker = new KinectTracker();
@@ -90,6 +96,41 @@ fill(255);
   float scaledX = map(v2.x, 0, k.width,  0, width);
   float scaledY = map(v2.y, 0, k.height, 0, height);
   
+  if (water.isColliding(scaledX,scaledY))
+  {
+   ellipse(640,355,175,170);
+   fill(0,191,255);
+  }
+  
+  if ( corian.isColliding(scaledX,scaledY))
+  {
+    ellipse(640,355,175,170);
+    fill(22,115,28);
+  }
+  
+  if ( chilli.isColliding(scaledX,scaledY))
+  {
+    ellipse(640,355,175,170);
+    fill(178,34,34);
+  }
+  
+  if ( turm.isColliding(scaledX,scaledY))
+  {
+    ellipse(640,355,175,170);
+    fill(218,165,32);
+  }
+  
+  if ( onion.isColliding(scaledX,scaledY))
+  {
+    ellipse(640,355,175,170);
+    fill(0,255,255);
+  }
+  
+  if ( garlic.isColliding(scaledX,scaledY))
+  {
+    ellipse(640,355,175,170);
+    fill(0,255,255);
+  }
 }
 
 void keyPressed() 
@@ -117,55 +158,4 @@ void clearImage()
  {
       //paintImg.set(x, y, color(0) );
  }
-}
-
-void Collisions()
-{
-  //water
-  if (x2 > x);
-  if x2 < x+width);
-  {
-   ellipse();
-   fill(0,191,255);
-  
-  //onion
-  if (x2 > x);
-  if x2 < x+width);
-  {
-    ellipse();
-    fill(0,255,255);
-  }
- 
-  //garlic
-  if (x2 > x);
-  if x2 < x+width);
-  {
-    ellipse();
-    fill(0,255,255);
-  }
-  
-  //chilli
-  if (x2 > x);
-  if x2 < x+width);
-  {
-    ellipse();
-    fill(178,34,34);
-  }
-  
-  //turm
-  if (x2 > x);
-  if x2 < x+width);
-  {
-    ellipse();
-    fill(218,165,32);
-  }
-  
-  //corian
-  if (x2 > x);
-  if x2 < x+width);
-  {
-    ellipse();
-    fill(22,115,28);
-  }
-  
 }

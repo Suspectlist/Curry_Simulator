@@ -125,14 +125,47 @@ void Collisions()
   if (x2 > x);
   if x2 < x+width);
   {
-    then
-  //onion
+   ellipse();
+   fill(0,191,255);
   
+  //onion
+  if (x2 > x);
+  if x2 < x+width);
+  {
+    ellipse();
+    fill(0,255,255);
+  }
+ 
   //garlic
+  if (x2 > x);
+  if x2 < x+width);
+  {
+    ellipse();
+    fill(0,255,255);
+  }
   
   //chilli
+  if (x2 > x);
+  if x2 < x+width);
+  {
+    ellipse();
+    fill(178,34,34);
+  }
   
   //turm
+  if (x2 > x);
+  if x2 < x+width);
+  {
+    ellipse();
+    fill(218,165,32);
+  }
   
   //corian
+  if (x2 > x);
+  if x2 < x+width);
+  {
+    ellipse();
+    fill(22,115,28);
+  }
+  
 }

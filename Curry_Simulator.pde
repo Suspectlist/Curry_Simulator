@@ -51,8 +51,12 @@ void setup()
   imgGarlic = loadImage("garlic.png");
   imgWater = loadImage("Water.png");
   
-  corian = new Ingredient("corian.png");;
+  corian = new Ingredient("corian.png");
   chilli = new Ingredient("chilli.png");
+  water = new Ingredient("water.png");
+  garlic = new Ingredient("garlic.png");
+  onion = new Ingredient("onion.png");
+  turm = new Ingredient("turm.png");  
   
   imgHand = loadImage("hand.png");
 

@@ -51,12 +51,12 @@ void setup()
   imgGarlic = loadImage("garlic.png");
   imgWater = loadImage("Water.png");
   
-  corian = new Ingredient("corian.png");
-  chilli = new Ingredient("chilli.png");
+  corian = new Ingredient("CorianderPowder.png");
+  chilli = new Ingredient("ChilliPowder.png");
   water = new Ingredient("Water.png");
   garlic = new Ingredient("garlic.png");
   onion = new Ingredient("onion.png");
-  turm= new Ingredient("TurmericPowder");
+  turm= new Ingredient("TurmericPowder.png");
   
   imgHand = loadImage("hand.png");
 
@@ -104,6 +104,7 @@ void draw()
   ellipse(640, 355, 175, 170);
 
   tracker.track();
+  tracker.display();
 
   PVector v1 = tracker.getPos();
   image(imgHand,v1.x,v1.y);

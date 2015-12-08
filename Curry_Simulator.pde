@@ -30,7 +30,7 @@ PImage imgWater;
 PImage imgHand;
 
 Ingredient corian;
-ingredient chilli;
+Ingredient chilli;
 Ingredient water;
 Ingredient garlic;
 Ingredient onion;
@@ -51,12 +51,12 @@ void setup()
   imgGarlic = loadImage("garlic.png");
   imgWater = loadImage("Water.png");
   
-  corian = new Ingredient("corian.png");
-  chilli = new Ingredient("chilli.png");
-  water = new Ingredient("water.png");
+  corian = new Ingredient("CorianderPowder.png");
+  chilli = new Ingredient("ChilliPowder.png");
+  water = new Ingredient("Water.png");
   garlic = new Ingredient("garlic.png");
   onion = new Ingredient("onion.png");
-  turm = new Ingredient("turm.png");  
+  turm = new Ingredient("TurmericPowder.png");  
   
   imgHand = loadImage("hand.png");
 
@@ -94,13 +94,13 @@ void draw()
 
   fill(255);
   image(imgBowl, 526, 245);
-  image(imgPlate, -200, 250);
-  image(imgChilli, 45, 340);
-  image(imgTurm, 20, 515);
-  image(imgCorian, 80, 620);
-  image(imgOnion, 250, 350);
-  image(imgGarlic, 250, 600);
-  image(imgWater, 1000, 600);
+  image(imgPlate, -200, 50);
+  image(imgChilli, 45, 140);
+  image(imgTurm, 20, 315);
+  image(imgCorian, 80, 420);
+  image(imgOnion, 250, 150);
+  image(imgGarlic, 250, 400);
+  image(imgWater, 526, 45);
   ellipse(640, 355, 175, 170);
 
   tracker.track();
@@ -113,7 +113,7 @@ void draw()
   float scaledX = map(v2.x, 0, k.width, 0, width);
   float scaledY = map(v2.y, 0, k.height, 0, height);
   
-  if (water.isColliding(scaledX,scaledY))
+  if (water.isColliding(scaledX,scaledY));
   {
    ellipse(640,355,175,170);
    fill(0,191,255);

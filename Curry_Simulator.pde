@@ -53,6 +53,10 @@ void setup()
   
   corian = new Ingredient("corian.png");
   chilli = new Ingredient("chilli.png");
+  water = new Ingredient("Water.png");
+  garlic = new Ingredient("garlic.png");
+  onion = new Ingredient("onion.png");
+  turm= new Ingredient("TurmericPowder");
   
   imgHand = loadImage("hand.png");
 

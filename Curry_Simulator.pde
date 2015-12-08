@@ -94,17 +94,16 @@ void draw()
 
   fill(255);
   image(imgBowl, 526, 245);
-  image(imgPlate, -200, 250);
-  image(imgChilli, 45, 340);
-  image(imgTurm, 20, 515);
-  image(imgCorian, 80, 620);
-  image(imgOnion, 250, 350);
-  image(imgGarlic, 250, 600);
-  image(imgWater, 1000, 600);
+  image(imgPlate, -200, 50);
+  image(imgChilli, 45, 140);
+  image(imgTurm, 20, 315);
+  image(imgCorian, 80, 420);
+  image(imgOnion, 250, 150);
+  image(imgGarlic, 250, 400);
+  image(imgWater, 526, 45);
   ellipse(640, 355, 175, 170);
 
   tracker.track();
-  tracker.display();
 
   PVector v1 = tracker.getPos();
   image(imgHand,v1.x,v1.y);

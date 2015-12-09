@@ -58,6 +58,7 @@ void setup()
   onion = new Ingredient("onion.png");
   turm = new Ingredient("TurmericPowder.png");  
   
+  
   imgHand = loadImage("hand.png");
 
   k = new Kinect(this);
@@ -70,6 +71,7 @@ void setup()
 void draw()
 {
   background(imgKitchen);  
+  fill(255);
   rect(870, 100, 300, 500);
   textSize(22);
   fill(0);
@@ -93,6 +95,19 @@ void draw()
   textSize(12);
 
   fill(255);
+  onion.SetPos(250, 150);
+  onion.Draw();
+  garlic.SetPos(250,400);
+  garlic.Draw();
+  water.SetPos(526, 45);
+  water.Draw();
+  corian.SetPos(80, 240);
+  corian.Draw();
+  chilli.SetPos(45, 140);
+  chilli.Draw();
+  turm.SetPos(20, 315);
+  turm.Draw();
+  
   image(imgBowl, 526, 245);
   image(imgPlate, -200, 50);
   image(imgChilli, 45, 140);
@@ -112,6 +127,8 @@ void draw()
   int t = tracker.getThreshold();
   float scaledX = map(v2.x, 0, k.width, 0, width);
   float scaledY = map(v2.y, 0, k.height, 0, height);
+  scaledX = mouseX;
+  scaledY = mouseY;
   
   if (water.isColliding(scaledX,scaledY));
   {

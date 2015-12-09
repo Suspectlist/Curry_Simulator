@@ -32,6 +32,7 @@ class Ingredient
         {
           if ( y < _y + _img.height)
           {
+            println("Hand is colliding with me.");
             return true;
           }
         }

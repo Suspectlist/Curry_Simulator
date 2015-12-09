@@ -35,6 +35,8 @@ Ingredient water;
 Ingredient garlic;
 Ingredient onion;
 Ingredient turm;
+Ingredient bowl;
+Ingredient plate;
 
 void setup()
 {
@@ -50,6 +52,7 @@ void setup()
   imgOnion = loadImage("onion.png");
   imgGarlic = loadImage("garlic.png");
   imgWater = loadImage("Water.png");
+  imgHand = loadImage("hand.png");
   
   corian = new Ingredient("CorianderPowder.png");
   chilli = new Ingredient("ChilliPowder.png");
@@ -57,10 +60,9 @@ void setup()
   garlic = new Ingredient("garlic.png");
   onion = new Ingredient("onion.png");
   turm = new Ingredient("TurmericPowder.png");  
+  bowl = new Ingredient("Bowl.png");
+  plate = new Ingredient("woodplate.png");
   
-  
-  imgHand = loadImage("hand.png");
-
   k = new Kinect(this);
   tracker = new KinectTracker();
   k.setTilt(0);
@@ -101,12 +103,16 @@ void draw()
   garlic.Draw();
   water.SetPos(526, 45);
   water.Draw();
-  corian.SetPos(80, 240);
+  corian.SetPos(80, 420);
   corian.Draw();
   chilli.SetPos(45, 140);
   chilli.Draw();
   turm.SetPos(20, 315);
   turm.Draw();
+  bowl.SetPos( 526, 245);
+  bowl.Draw();
+  plate.SetPos(-200, 50);
+  plate.Draw();
   
   image(imgBowl, 526, 245);
   image(imgPlate, -200, 50);
@@ -127,43 +133,41 @@ void draw()
   int t = tracker.getThreshold();
   float scaledX = map(v2.x, 0, k.width, 0, width);
   float scaledY = map(v2.y, 0, k.height, 0, height);
-  scaledX = mouseX;
-  scaledY = mouseY;
   
-  if (water.isColliding(scaledX,scaledY));
+  if (water.isColliding(scaledX,scaledY))
   {
+   fill(0,255,255);
    ellipse(640,355,175,170);
-   fill(0,191,255);
   }
   
   if (corian.isColliding(scaledX,scaledY))
   {
+    fill(0, 153, 0);
     ellipse(640,355,175,170);
-    fill(22,115,28);
   }
   
   if (chilli.isColliding(scaledX,scaledY))
   {
-    ellipse(640,355,175,170);
     fill(178,34,34);
+    ellipse(640,355,175,170);
   }
   
   if (turm.isColliding(scaledX,scaledY))
   {
-    ellipse(640,355,175,170);
     fill(218,165,32);
+    ellipse(640,355,175,170);
   }
   
   if (onion.isColliding(scaledX,scaledY))
   {
+    fill(0,191,255);
     ellipse(640,355,175,170);
-    fill(0,255,255);
   }
   
   if (garlic.isColliding(scaledX,scaledY))
   {
+    fill(0,191,255);
     ellipse(640,355,175,170);
-    fill(0,255,255);
   }
 }
 
